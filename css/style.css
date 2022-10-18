@@ -11,7 +11,7 @@
 .GridContenedor{
     display: grid; 
     grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 60px 60px auto 100px; 
+    grid-template-rows: 65px 65px auto 100px; 
     gap: 0px 0px; 
     grid-template-areas: 
     "header header"
@@ -336,11 +336,16 @@ footer p{
         text-justify: auto;
         font-size: smaller;
         margin-top: 10px
-        }
+    }
 
-        main h1{
-            position: static;
-        }
+    main h1{
+        position: static;
+    }
+
+    .picture div img{
+        width: 200px;
+        height: 200px;
+    }
 
     .VideoContainer div iframe{
         width: 250px;
@@ -349,9 +354,9 @@ footer p{
 }
 
 @media screen and (max-width: 450px){
-    .picture img{
-        width: 250px;
-        height: 250px;
+    .picture div img{
+        width: 150px;
+        height: 150px;
         
     }
 }
