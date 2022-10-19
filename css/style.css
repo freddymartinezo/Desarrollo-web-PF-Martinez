@@ -8,16 +8,16 @@
 }
 
 /* body */
-.GridContenedor{
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 65px 65px auto 100px; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-    "header header"
-    "nav nav"
-    "main main"
-    "footer footer";
+.GridContenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60px 60px auto 100px;
+    gap: 0px 0px;
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "main main"
+        "footer footer";
 }
 
 /*HEADER*/
@@ -32,12 +32,10 @@
 }
 
 header {
-    height: 54px;
     position: sticky;
     top: 0px;
     background-color: white;
     grid-area: header;
-    z-index: 2;
 }
 
 /* NAV */
@@ -56,28 +54,37 @@ header {
     background-color: white;
     margin: 0px;
     padding: 0px;
-    z-index: 2;
 }
-.menu div nav ul{
+
+.menu div nav ul {
     display: flex;
 }
 
-.menu div nav ul li{
+.menu div nav ul li {
     list-style: none;
 }
 
 .icon {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
+    margin: 0%;
+    padding: 0%
 }
 
-.menu nav ul li a{
+.menu nav ul li a {
     border: 1px solid rgba(38, 189, 189, 0.623);
-    margin-left: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, white, white,  rgba(164, 238, 238, 0.623))
+    
 }
 
 .menu nav ul li a:hover {
     text-shadow: rgb(7, 208, 235) 2px 2px 2px;
+}
+
+.MenuDesplegable {
+    display: none;
 }
 
 /*MAIN*/
@@ -106,11 +113,11 @@ main h1 {
     flex-wrap: wrap;
 }
 
-.VideoContainer div iframe{
-    transition: 1s;
+.VideoContainer div iframe {
+    transition: 2s;
 }
 
-.VideoContainer div iframe:hover{
+.VideoContainer div iframe:hover {
     transform: scale(1.1);
 }
 
@@ -131,23 +138,23 @@ p {
     text-align: justify;
 }
 
-.picture div p b{
+.picture div p b {
     text-decoration: none;
     list-style: none;
     color: rgba(29, 139, 139, 0.842);
 }
 
-.picture div p b{
+.picture div p b {
     transition: 1s;
 }
 
-.picture div p b:hover{
+.picture div p b:hover {
     text-shadow: #182122 2px 2px 2px;
 }
 
 li {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-left: 25px;
+    margin-left: 30px;
 }
 
 a {
@@ -156,11 +163,11 @@ a {
     color: rgba(29, 139, 139, 0.842);
 }
 
-div a{
+div a {
     transition: 1s;
 }
 
-div a:hover{
+div a:hover {
     text-shadow: #182122 2px 2px 2px;
     scale: 1.1;
 }
@@ -199,7 +206,7 @@ div a:hover{
     color: #7D9D9C;
 }
 
-.picture div a:hover{
+.picture div a:hover {
     text-shadow: #182122 2px 2px 2px;
 }
 
@@ -211,12 +218,32 @@ div a:hover{
     height: 200px;
 }
 
+.FormularioContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.DatosContainer {
+    background-color: rgba(38, 189, 189, 0.39);
+    border-radius: 10%;
+    border: black solid 2px;
+    width: 500px;
+}
+
+.FormH2 {
+    background-color: transparent;
+}
+
 /*FOOTER*/
 
-.footer {
+footer {
     grid-area: footer;
     position: relative;
     color: lightgrey;
+    background-color: gray;
     border: solid rgba(38, 189, 189, 0.623);
     border-bottom: none;
     border-left: none;
@@ -226,139 +253,173 @@ div a:hover{
     flex-direction: column;
     justify-content: space-evenly;
     height: 150px;
-    background-color: gray;
 }
 
-footer p{
+footer p {
     text-align: center;
 }
 
-.footer div{
+.footer div {
     flex-direction: row;
 }
 
 /* Media Query */
-@media screen and (max-width: 1120px){
-    .icon{
+@media screen and (max-width: 1140px) {
+    .menu nav ul li a{
+        font-size: small;
+    }
+    .icon {
         width: 30px;
         height: 30px;
+        margin: 0%;
+        padding: 0%
+    }
+
+}
+
+@media screen and (max-width: 1050px) {
+    .GridContenedor {
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr 1fr;
+        grid-template-rows: 60px 60px auto 100px;
+        gap: 0px 0px;
+        grid-template-areas:
+            "header main main"
+            "nav main main"
+            "nav main main"
+            "footer footer footer";
+    }
+
+    main h1 {
+        position: sticky;
+        top: 0%;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .icon {
+        width: 30px;
+        height: 30px;
+        margin: 0%;
+        padding: 0%
+    }
+
+    .menu div nav ul {
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 450px;
+        margin-left: 0%;
+        justify-content: space-evenly;
+
+    }
+
+    .menu div nav ul li a {
+        margin-left: 0px;
+
+    }
+    li{
+        margin: 0%;
     }
 }
 
-@media screen and (max-width: 1050px){
-    .GridContenedor{
-        display: grid; 
-        grid-template-columns: 0.5fr 0.5fr 1fr ; 
-        grid-template-rows: 60px 60px auto 100px; 
-        gap: 0px 0px; 
-        grid-template-areas: 
-        "header main main"
-        "nav main main"
-        "nav main main"
-        "footer footer footer";
-        }
-
-        main h1{
-            position: sticky;
-            top: 0%;
-        }
-        .logo{
-            display: flex;
-            justify-content: start;
-            align-items:center;
-        }
-
-        .icon{
-            width: 40px;
-            height: 40px;
-        }
-        
-        .menu div nav ul{
-            height: 450px;
-            display: flex;
-            flex-direction: column;
-            margin-top: 450px;
-            margin-left: 0%;
-            justify-content: space-evenly;
-
-        }
-        .menu div nav ul li a{
-            margin-left: 0px;
-            
-        }
-}
-
-@media screen and (max-width:700px){
-    .GridContenedor{
-        display: grid; 
-        grid-template-columns: 0.5fr 1fr 1fr; 
-        grid-template-rows: 60px 60px auto 50px; 
-        gap: 0px 0px; 
-        grid-template-areas: 
-        "header main main"
-        "nav main main"
-        "nav main main"
-        "footer footer footer";
+@media screen and (max-width:700px) {
+    .GridContenedor {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 60px auto 50px;
+        gap: 0px 0px;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
     }
-        .logo img{
-            width: 200px;
-            height: 50px;
-            margin-left: 15px;
-        }
 
-        .icon{
+    nav {
+        display: none;
+    }
+
+    .logo img {
+        width: 200px;
+        height: 50px;
+        margin-left: 15px;
+    }
+
+    .icon {
         width: 30px;
         height: 30px;
     }
-        .menu ul {
+
+    .menu ul {
         margin-top: 160px;
         display: flex;
         flex-direction: column;
     }
+
+    .MenuDesplegable {
+        display: inline;
+        /* width: 650px;
+        height: 60px; */
+    }
 }
 
-@media screen and (max-width: 550px){
-    .logo img{
+@media screen and (max-width: 550px) {
+    .GridContenedor {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 60px auto 50px;
+        gap: 0px 0px;
+        align-items: center;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+    }
+    .logo img {
         width: 150px;
         height: 30px;
     }
 
-    .menu nav ul li a img{
+    .menu nav ul li a img {
         display: none;
     }
 
-    .menu{
+    .menu {
         gap: 0;
     }
 
-    .menu nav ul li{
+    .menu nav ul li {
         margin-left: 0;
         text-justify: auto;
         font-size: smaller;
         margin-top: 10px
     }
-
-    main h1{
+    .MenuDesplegable {
+        display: inline;
+    }
+    main h1 {
         position: static;
     }
 
-    .picture div img{
-        width: 200px;
-        height: 200px;
+    /* .VideoContainer div iframe {
+        width: 250px;
+        height: 250px;
+    } */
+    .DatosContainer{
+        width: 400px;
     }
+}
 
-    .VideoContainer div iframe{
+@media screen and (max-width: 450px) {
+    .MenuDesplegable {
+        display: inline;
+    }
+    .picture img {
         width: 250px;
         height: 250px;
     }
 }
-
-@media screen and (max-width: 450px){
-    .picture div img{
-        width: 150px;
-        height: 150px;
-        
-    }
-}
-
-

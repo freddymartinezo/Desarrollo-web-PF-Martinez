@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- BOOSTRAP CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../img/protection.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +24,6 @@
         </header>
 
         <section class="menu">
-            
             <div>
                 <nav>
                     <ul>
@@ -52,137 +50,188 @@
             </div>
 
         </section>
-
+        <section  class="MenuDesplegable">
+            <nav class="navbar bg-opacity-100 fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;"></font>
+                        </font>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">InfoBabies</font>
+                                </font>
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Cerca"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="../index.html">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">Inicio</font>
+                                        </font>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./embarazo.html">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">Embarazo</font>
+                                        </font>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./rn.html">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">Recien Nacido</font>
+                                        </font>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./bebe.html">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">Bebe</font>
+                                        </font>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./preescolar.html">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">Preescolar</font>
+                                        </font>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./contacto.html">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">Contacto</font>
+                                        </font>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
         <main>
             <h1 id="contacto">Contacto</h1>
-            <div class="container-fluid">
-                <form class="row g-3 needs-validation " novalidate>
-                <div class="col-md-4">
-                    <label for="validationCustom01" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="validationCustom01" value="Lorem" required>
-                    <div class="valid-feedback">
-                        Muy Bien!
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <label for="validationCustom02" class="form-label">Apellido</label>
-                    <input type="text" class="form-control" id="validationCustom02" value="Ipsum" required>
-                    <div class="valid-feedback">
-                        Muy Bien!
-                    </div>
-                </div>
+            <section class="FormularioContainer">
+                <div class="DatosContainer">
+                    <form action="" method="" enctype="">
+                        <div>
+                            <h2 class="FormH2">Formulario</h2>
+                            <div>
+                                <label for="nombre">Nombre</label>
+                                <input type="text" name="nombre">
+                            </div>
 
-                <div class="col-md-3">
-                    <label for="validationCustomEdad" class="form-label">Edad</label>
-                    <input type="number" class="form-control" id="validationCustomEdad" required>
-                    <div class="invalid-feedback">
-                        Edad.
-                    </div>
-                </div>
+                            <div>
+                                <label for="apellido">Apellido</label>
+                                <input type="text" name="apellido">
+                            </div>
 
+                            <div>
+                                <label for="telefono">Telefono</label>
+                                <input type="tel" name="telefono">
+                            </div>
 
-                <div class="col-md-4">
-                    <label for="validationCustomUsername" class="form-label">Mail</label>
-                    <div class="input-group has-validation">
-                        <span class="input-group-text" id="inputGroupPrepend">@</span>
-                        <input type="text" class="form-control" id="validationCustomUsername"
-                            aria-describedby="inputGroupPrepend" required>
-                        <div class="invalid-feedback">
-                            Por favor ingresa correo aca.
+                            <div>
+                                <label for="edad">Edad</label>
+                                <input type="number" name="edad">
+                            </div>
+
+                            <div>
+                                <label for="correo">Correo</label>
+                                <input type="email" name="correo">
+                            </div>
+
+                            <div>
+                                <label for="contrasenia">Contraseña</label>
+                                <input type="password" name="contrasenia">
+                            </div>
+
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <label for="validationCustom03" class="form-label">Ciudad o Provincia</label>
-                    <input type="text" class="form-control" id="validationCustom03" required>
-                    <div class="invalid-feedback">
-                        Por favor ingrece una ciudad.
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <label for="validationCustom04" class="form-label">Pais</label>
-                    <select class="form-select" id="validationCustom04" required>
-                        <option selected disabled value="">Seleccionar...</option>
-                        <option>Argentia</option>
-                        <option>Brasil</option>
-                        <option>Chile</option>
-                        <option>Colombia</option>
-                        <option>Costa Rica</option>
-                        <option>Ecuador</option>
-                        <option>El Salvador</option>
-                        <option>Honduras</option>
-                        <option>Mexico</option>
-                        <option>Panama</option>
-                        <option>Republica Dominicana</option>
-                        <option>Uruguay</option>
-                        <option>Venezuela</option>
-                        <option>Otro</option>
-                    </select>
-                    <div class="invalid-feedback">
-                        Por Favor Seleccionar un pais.
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <label for="validationCustom05" class="form-label">C.P</label>
-                    <input type="text" class="form-control" id="validationCustom05" required>
-                    <div class="invalid-feedback">
-                        Codigo Postal.
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                        <label class="form-check-label" for="invalidCheck">
-                            Aceptar terminos y condiciones.
-                        </label>
-                        <div class="invalid-feedback">
-                            Debes aceptar antes de enviar.
+
+                        <div>
+                            <h2 class="FormH2">Genero</h2>
+                            <label for="masculino">Masculino</label>
+                            <input type="radio" id="masculino" name="genre">
+                            <label for="femenino">Femenino</label>
+                            <input type="radio" id="femenino" name="genre">
                         </div>
-                    </div>
+
+                        <div>
+                            <h2 class="FormH2">País</h2>
+                            <select name="pais" id="pais">
+                                <option value="argentina">Argentina</option>
+                                <option value="bolivia">Bolivia</option>
+                                <option value="colombia">Colombia</option>
+                                <option value="peru">Perú</option>
+                                <option value="uruguay">Uruguay</option>
+                                <option value="venezuela">Venezuela</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                            <label for="otro">Otro país</label>
+                            <input type="text" name="otro">
+                        </div>
+
+                        <div>
+                            <label for="consulta">Consulta</label>
+                            <textarea name="consulta" id="consulta" cols="30" rows="20">Escribe tu consulta</textarea>
+                        </div>
+
+                        <div>
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Limpiar">
+                        </div>
+                            
+                    </form>
                 </div>
-                <div class="col-12">
-                    <button class="btn  btn-outline-info" type="submit">Enviar datos</button>
-                </div>
-            </form>
-            </div>
-            
-            <h2>Ubicanos</h2>
 
-            <div>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2320.67578522119!2d-59.43561242357086!3d-34.65644118350963!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc730d480f080d%3A0xdff0e69265b2d76e!2sHospital%20Blas%20L.%20Dubarry!5e0!3m2!1ses!2sar!4v1662426277908!5m2!1ses!2sar"
-                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-            </section>
+    <h2 class="FormH2">Ubicanos</h2>
 
-            <div>
-                <a href="#contacto"><b>IR ARRIBA</b></a>
-            </div>
-            
-        </main>
+    <div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2320.67578522119!2d-59.43561242357086!3d-34.65644118350963!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc730d480f080d%3A0xdff0e69265b2d76e!2sHospital%20Blas%20L.%20Dubarry!5e0!3m2!1ses!2sar!4v1662426277908!5m2!1ses!2sar"
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+    </section>
 
-        <footer class="footer">
-            <p>INFOBABIES Desarrollado por:
-                <br> Ing. Freddy Martínez - © 2022
-                <br> Todos los Derechos Reservados.
-                <br> Información aportada por
-                <br> Dra Jesiree De Martínez Médico Pediatra
-            </p>
+    <div>
+        <a href="#contacto"><b>IR ARRIBA</b></a>
+    </div>
 
-            <div>
-                <a href="https://www.instagram.com/dra.jesy/"><img src="../img/instagram.png" alt="logo instagram"></a>
-                <a href="https://www.facebook.com/"><img src="../img/facebook.png" alt="logo facebook"></a>
-                <a href="https://www.youtube.com/c/EmbarazoSemanaaSemana"><img src="../img/youtube.png"
-                        alt="logo youtube"></a>
-            </div>
-        </footer>
+    </main>
 
-        <!-- BOOSTRAP JS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
+    <footer class="footer">
+        <p>INFOBABIES Desarrollado por:
+            <br> Ing. Freddy Martínez - © 2022
+            <br> Todos los Derechos Reservados.
+            <br> Información aportada por
+            <br> Dra Jesiree De Martínez Médico Pediatra
+        </p>
+
+        <div>
+            <a href="https://www.instagram.com/dra.jesy/"><img src="../img/instagram.png" alt="logo instagram"></a>
+            <a href="https://www.facebook.com/"><img src="../img/facebook.png" alt="logo facebook"></a>
+            <a href="https://www.youtube.com/c/EmbarazoSemanaaSemana"><img src="../img/youtube.png"
+                    alt="logo youtube"></a>
+        </div>
+    </footer>
+    <!-- boostrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     </div>
 </body>
 
