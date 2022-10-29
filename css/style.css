@@ -74,15 +74,14 @@ header {
 }
 
 .menu nav ul li a {
-    border: 1px solid rgba(38, 189, 189, 0.623);
+    border: 1px solid rgba(29, 139, 139, 0.842);
     padding: 15px;
     border-radius: 5px;
-    background-image: linear-gradient(to right, white, white,  rgba(164, 238, 238, 0.623))
-    
+    background-image: linear-gradient(to right, white, white,rgba(0, 240, 240, 0.199))
 }
 
 .menu nav ul li a:hover {
-    text-shadow: rgb(7, 208, 235) 2px 2px 2px;
+    text-shadow: #7D9D9C 2px 2px 2px;
 }
 
 .MenuDesplegable {
@@ -103,9 +102,9 @@ main {
 main h1 {
     padding: 10px;
     margin: 5px;
-    color: rgba(38, 189, 189, 0.623);
+    color: rgba(29, 139, 139, 0.842);
     text-align: center;
-    background-color: lightgray;
+    background-color:  lightgray;
 }
 
 .VideoContainer {
@@ -159,9 +158,8 @@ li {
     margin-left: 30px;
 }
 
-a {
-    text-decoration: none;
-    list-style: none;
+a{
+    text-decoration:none;
     color: rgba(29, 139, 139, 0.842);
 }
 
@@ -170,12 +168,12 @@ div a {
 }
 
 div a:hover {
-    text-shadow: #182122 2px 2px 2px;
+    color: rgba(29, 139, 139, 0.842);
+    text-shadow: black 2px 2px 2px;
     scale: 1.1;
 }
 
-
-.picture {
+.picture{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -226,18 +224,48 @@ div a:hover {
     flex-direction: column;
     text-align: center;
     align-items: center;
+
+}
+
+.FormularioContainer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input {
+    outline: none;
+}
+
+input:focus {
+    border: 2px solid rgb(38, 189, 189);
+    ;
+    border-radius: 4px;
+}
+
+textarea {
+    outline: none;
+}
+
+textarea:focus {
+    border: 2px solid rgb(38, 189, 189);
+    ;
+    border-radius: 4px;
 }
 
 .DatosContainer {
-    background-color: rgba(38, 189, 189, 0.39);
-    border-radius: 10%;
-    border: black solid 2px;
+    background-color: rgba(38, 189, 189, 0.178);
+    border-radius: 5%;
+    border: lightgrey solid 2px;
     width: 500px;
 }
 
 .FormH2 {
     background-color: transparent;
 }
+
+
 
 /*FOOTER*/
 
@@ -268,10 +296,11 @@ footer div {
 /* Media Query */
 @media screen and (max-width: 1250px) {
 
-    .menu nav ul li a{
+    .menu nav ul li a {
         font-size: small;
         margin-top: 0%;
     }
+
     .icon {
         width: 30px;
         height: 30px;
@@ -300,9 +329,9 @@ footer div {
         align-items: center;
     }
 
-    .menu{
+    .menu {
         overflow-y: scroll;
-        height: 300px;
+        height: 320px;
         justify-content: flex-start;
     }
 
@@ -328,7 +357,8 @@ footer div {
         margin-top: 10px;
 
     }
-    li{
+
+    li {
         margin: 0%;
     }
 
@@ -336,20 +366,21 @@ footer div {
         position: sticky;
         top: 0%;
     }
-    footer{
+
+    footer {
         z-index: 100;
         height: 110px;
         flex-direction: row;
         font-size: small;
-        }
     }
+}
 
 
 @media screen and (max-width:700px) {
     .GridContenedor {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 60px auto 50px;
+        grid-template-rows: 60px auto 120px;
         gap: 0px 0px;
         grid-template-areas:
             "header"
@@ -357,7 +388,7 @@ footer div {
             "footer";
     }
 
-    nav {
+    .menu {
         display: none;
     }
 
@@ -372,16 +403,14 @@ footer div {
         height: 30px;
     }
 
-    .menu ul {
-        margin-top: 160px;
-        display: flex;
-        flex-direction: column;
+    .MenuDesplegable {
+        z-index: 100;
+        display: inline;
     }
 
-    .MenuDesplegable {
-        display: inline;
-        /* width: 650px;
-        height: 60px; */
+    footer {
+        height: 120px;
+        margin: 0%;
     }
 }
 
@@ -397,6 +426,7 @@ footer div {
             "main"
             "footer";
     }
+
     .logo img {
         width: 150px;
         height: 30px;
@@ -416,9 +446,11 @@ footer div {
         font-size: smaller;
         margin-top: 10px
     }
+
     .MenuDesplegable {
         display: inline;
     }
+
     main h1 {
         position: static;
     }
@@ -427,7 +459,7 @@ footer div {
         width: 250px;
         height: 250px;
     } */
-    .DatosContainer{
+    .DatosContainer {
         width: 400px;
     }
 }
@@ -436,6 +468,7 @@ footer div {
     .MenuDesplegable {
         display: inline;
     }
+
     .picture img {
         width: 250px;
         height: 250px;
