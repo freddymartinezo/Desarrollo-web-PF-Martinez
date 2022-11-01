@@ -1,0 +1,23 @@
+@import "../base/variables";
+
+footer{
+    grid-area: footer;
+    position: relative;
+    color: $gris-claro;
+    background-color: $gris;
+    border: solid $color-transparencia-claro;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 200px;
+        p{
+            text-align: center;
+        }
+        div{
+            flex-direction: row
+        }
+}

@@ -1,0 +1,76 @@
+/*--VARIABLES--*/
+
+$color-blanco: white;
+
+$gris-claro: lightgrey;
+
+$gris: grey;
+
+$color-nav: rgba(0, 240, 240, 0.199);
+
+$paleta-colores: #7D9D9C;
+
+$paleta-claro: #576F72;
+
+$color-principal: rgb(38, 189, 189);
+
+$color-transparencia:  rgba(29, 139, 139, 0.178);
+
+$color-transparencia-claro:  rgba(38, 189, 189, 0.623);
+
+$color-transparencia-0842: rgba(29, 139, 139, 0.842);
+
+
+
+/*-MIXIN-*/
+
+@mixin flex-nav ($flex,$justify,$aling) {
+    display: $flex;
+    justify-content: $justify;
+    align-items: $aling;
+
+    // display: flex;
+    // justify-content: space-evenly;
+    // align-items: center;
+}
+
+@mixin videos ($flex,$justify,$aling,$wrap) {
+    display: $flex;
+        justify-content: $justify;
+        align-items: $aling;
+        flex-wrap: $wrap;
+}
+
+@mixin picture ($flex,$justify,$wrap,$object) {
+        display: $flex;
+        justify-content: $justify;
+        flex-wrap: $wrap;
+        object-fit: $object;
+}
+
+@mixin div-picmain ($justify,$aling,$object) {
+        justify-content: center;
+        align-items: center;
+        object-fit: cover;
+}
+
+@mixin formulario-container ($flex,$justify,$direction,$aling) {
+    display: $flex;
+    justify-content: $justify;
+    flex-direction: $direction;
+    align-items: $aling;
+}
+
+@mixin contenedor-form ($flex,$direction,$justify,$aling) {
+    display: $flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $aling;
+}
+
+@mixin iframe-contact ($position,$flex,$justify) {
+    position: $position;
+    display: $flex;
+    justify-content: $justify;
+}
+

@@ -1,0 +1,184 @@
+@media screen and (max-width: 1250px) {
+
+    .menu nav ul li a {
+        font-size: small;
+        margin-top: 0%;
+    }
+
+    .icon {
+        width: 30px;
+        height: 30px;
+        margin: 0%;
+        padding: 0%
+    }
+
+}
+
+@media screen and (max-width: 1050px) {
+    .GridContenedor {
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr 1fr;
+        grid-template-rows: 60px 60px auto 100px;
+        gap: 0px 0px;
+        grid-template-areas:
+            "header main main"
+            "nav main main"
+            "nav main main"
+            "footer footer footer";
+    }
+
+    .logo {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .menu {
+        overflow-y: scroll;
+        height: 320px;
+        justify-content: flex-start;
+    }
+
+    .icon {
+        width: 30px;
+        height: 30px;
+        margin: 0%;
+        padding: 0%
+    }
+
+    .menu div nav ul {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+        margin-left: 0%;
+        justify-content: space-evenly;
+
+    }
+
+    .menu div nav ul li a {
+        margin-left: 0px;
+        margin-top: 10px;
+
+    }
+
+    li {
+        margin: 0%;
+    }
+
+    main h1 {
+        position: sticky;
+        top: 0%;
+    }
+
+    footer {
+        z-index: 100;
+        height: 110px;
+        flex-direction: row;
+        font-size: small;
+    }
+}
+
+
+@media screen and (max-width:700px) {
+    .GridContenedor {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 60px auto 120px;
+        gap: 0px 0px;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .logo img {
+        width: 200px;
+        height: 50px;
+        margin-left: 15px;
+    }
+
+    .icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .MenuDesplegable {
+        z-index: 100;
+        display: inline;
+        height: -20%;
+    }
+
+    a:hover {
+        scale: none;
+        text-shadow: black 0.5px 0.5px 0.5px;
+    }
+
+    footer {
+        height: 120px;
+        margin: 0%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .GridContenedor {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 60px auto 50px;
+        gap: 0px 0px;
+        align-items: center;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+    }
+
+    .logo img {
+        width: 150px;
+        height: 30px;
+    }
+
+    .menu nav ul li a img {
+        display: none;
+    }
+
+    .menu {
+        gap: 0;
+    }
+
+    .menu nav ul li {
+        margin-left: 0;
+        text-justify: auto;
+        font-size: smaller;
+        margin-top: 10px
+    }
+
+    .MenuDesplegable {
+        display: inline;
+    }
+
+    main h1 {
+        position: static;
+    }
+
+    .DatosContainer {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .MenuDesplegable {
+        display: inline;
+        z-index: 100;
+        height: -10%;
+    }
+
+    .picture img {
+        width: 250px;
+        height: 250px;
+    }
+}

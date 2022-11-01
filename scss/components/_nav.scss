@@ -1,0 +1,51 @@
+@import "../base/variables";
+
+.menu {
+    position: sticky;
+    top: 60px;
+    height: 70px;
+    grid-area: nav;
+    @include flex-nav (flex,space-evenly,center);
+    text-decoration: none;
+    color: $paleta-claro;
+    list-style: none;
+    background-color: $color-blanco;
+    margin: 0px;
+    padding: 0px;
+    z-index: 100;
+    div {
+        nav {
+            ul {
+                display: flex;
+                li {
+                    list-style: none;
+                    margin-left: 1vh;
+                    a {
+                        border: 1px solid $color-transparencia;
+                        padding: 15px;
+                        border-radius: 15px;
+                        background-image: linear-gradient(to right, $color-blanco, $color-blanco, $color-nav);
+                        div {
+                            transition: 1s;
+                            &:hover {
+                                color: $color-transparencia-0842;
+                                text-shadow: black 2px 2px 2px;
+                                scale: 1.1;
+                            }
+                        }
+                    }
+                }
+                .icon {
+                    width: 30px;
+                    height: 30px;
+                    margin: 0%;
+                    padding: 0%
+                }
+            }
+        }
+    }
+}
+
+.MenuDesplegable {
+    display: none;
+}

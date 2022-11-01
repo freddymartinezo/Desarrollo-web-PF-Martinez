@@ -1,0 +1,51 @@
+@import url(https://fonts.gstatic.com/s/combo/v21/BXRlvF3Jh_fIhj0rDO5C8A.woff2);
+@import "./variables";
+
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Combo', cursive;
+    box-sizing: border-box;
+}
+
+.GridContenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60px 70px auto 100px;
+    gap: 0px 0px;
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "main main"
+        "footer footer";
+}
+
+
+h2 {
+    color: $paleta-colores;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: $gris-claro;
+}
+
+h3 {
+    color:$paleta-colores;
+}
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+    color: $color-transparencia-0842;
+    transition: 1s;
+    &:hover {
+        color: $color-transparencia-0842;
+        text-shadow: black 2px 2px 2px;
+        scale: 1.1;
+    }  
+}
+

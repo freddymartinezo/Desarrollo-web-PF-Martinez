@@ -8,6 +8,7 @@
 }
 
 /* body */
+
 .GridContenedor {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -77,12 +78,12 @@ header {
     border: 1px solid rgba(29, 139, 139, 0.842);
     padding: 15px;
     border-radius: 5px;
-    background-image: linear-gradient(to right, white, white,rgba(0, 240, 240, 0.199))
+    background-image: linear-gradient(to right, white, white,rgba(0, 240, 240, 0.199));
 }
 
-.menu nav ul li a:hover {
+/* .menu nav ul li a:hover {
     text-shadow: #7D9D9C 2px 2px 2px;
-}
+} */
 
 .MenuDesplegable {
     display: none;
@@ -240,7 +241,6 @@ input {
 
 input:focus {
     border: 2px solid rgb(38, 189, 189);
-    ;
     border-radius: 4px;
 }
 
@@ -250,7 +250,6 @@ textarea {
 
 textarea:focus {
     border: 2px solid rgb(38, 189, 189);
-    ;
     border-radius: 4px;
 }
 

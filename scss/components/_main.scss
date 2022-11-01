@@ -1,0 +1,118 @@
+@import "../base/variables";
+
+/*--MAIN--*/
+
+main {
+    background-image: url(../img/pexels-henley-design-studio-1108195.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    grid-area: main;
+    h1 {
+        padding: 10px;
+        margin: 5px;
+        color: $paleta-colores;
+        text-align: center;
+        background-color:  $gris-claro;
+    }
+    .VideoContainer {
+        @include videos (flex,space-around,center,wrap);
+
+        div{
+            iframe{
+                &:hover {
+                    transform: scale(1.1);
+                    transition: 1s;
+                } 
+            }
+        }
+        div{
+            a{
+                &:hover{
+                    color: $color-transparencia-0842;
+                    text-shadow: black 2px 2px 2px;
+                    scale: 1.1;
+                }
+            }
+        }
+    }
+    .picture {
+        @include picture (flex,center,wrap,cover);
+        img {
+            width: 350px;
+            height: 220px;
+            box-shadow: rgb(0, 0, 0) 4px 4px 4px 0;
+            object-fit: cover
+        }
+        div {
+            @include div-picmain (center,center,cover);
+            width: 500px;
+            margin: 50px;
+            a{
+                &:hover{
+                    text-shadow: #182122 2px 2px 2px;
+                }
+            }
+            p {
+                b {
+                    text-decoration: none;
+                    list-style: none;
+                    color: $color-transparencia-0842;
+                    transition: 1s;
+                    &:hover {
+                        text-shadow: #182122 2px 2px 2px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+#blw {
+    color: $paleta-colores;
+}
+
+/*--CONTACTOS--*/
+
+.FormularioContainer {
+    @include formulario-container (flex,center,column,center);
+    text-align: center;
+    div {
+        @include contenedor-form (flex,column,space-between,center);
+    }
+}
+
+input {
+    outline: none;
+    &:focus {
+        border: 2px solid $color-principal;
+        border-radius: 4px;
+    }
+}
+
+textarea {
+    outline: none;
+    &:focus {
+        border: 2px solid $color-principal;
+        border-radius: 4px;
+    }
+}
+
+.DatosContainer {
+    background-color: $color-transparencia;
+    border-radius: 0.8px;
+    border: $gris-claro solid 2px;
+    width: 500px;
+}
+
+.FormH2 {
+    background-color: transparent;
+}
+
+.iframe {
+    @include iframe-contact (relative,flex,center);
+    width: 350px;
+    height: 200px;
+}
