@@ -28,6 +28,18 @@ p {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-align: justify; }
 
+ol {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: justify; }
+
+ul {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: justify; }
+
+li {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: justify; }
+
 a {
   text-decoration: none;
   color: rgba(29, 139, 139, 0.842);
@@ -36,6 +48,12 @@ a {
     color: rgba(29, 139, 139, 0.842);
     text-shadow: black 2px 2px 2px;
     scale: 1.1; }
+
+.IrArriba {
+  text-decoration: none;
+  margin-left: 40%; }
+  .IrArriba:hover {
+    text-shadow: black 2px 2px 2px; }
 
 /*--VARIABLES--*/
 /*-MIXIN-*/
@@ -76,21 +94,14 @@ header {
       list-style: none;
       margin-left: 1vh; }
       .menu div nav ul li a {
-        border: 1px solid rgba(29, 139, 139, 0.178);
         padding: 15px;
-        border-radius: 15px;
+        border-radius: 5px;
         background-image: linear-gradient(to right, white, white, rgba(0, 240, 240, 0.199)); }
-        .menu div nav ul li a div {
-          transition: 1s; }
-          .menu div nav ul li a div:hover {
-            color: rgba(29, 139, 139, 0.842);
-            text-shadow: black 2px 2px 2px;
-            scale: 1.1; }
-    .menu div nav ul .icon {
-      width: 30px;
-      height: 30px;
-      margin: 0%;
-      padding: 0%; }
+  .menu div nav .icon {
+    width: 30px;
+    height: 30px;
+    margin: 0%;
+    padding: 0%; }
 
 .MenuDesplegable {
   display: none; }
@@ -228,6 +239,8 @@ footer {
 
 @media screen and (max-width: 1050px) {
   .GridContenedor {
+    margin: 0;
+    box-sizing: border-box;
     display: grid;
     grid-template-columns: 0.5fr 0.5fr 1fr;
     grid-template-rows: 60px 60px auto 100px;
@@ -287,9 +300,6 @@ footer {
     z-index: 100;
     display: inline;
     height: -20%; }
-  a:hover {
-    scale: none;
-    text-shadow: black 0.5px 0.5px 0.5px; }
   footer {
     height: 120px;
     margin: 0%; } }

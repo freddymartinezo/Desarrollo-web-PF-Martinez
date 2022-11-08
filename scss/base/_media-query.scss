@@ -16,6 +16,8 @@
 
 @media screen and (max-width: 1050px) {
     .GridContenedor {
+        margin: 0;
+        box-sizing: border-box;
         display: grid;
         grid-template-columns: 0.5fr 0.5fr 1fr;
         grid-template-rows: 60px 60px auto 100px;
@@ -113,10 +115,10 @@
         height: -20%;
     }
 
-    a:hover {
-        scale: none;
-        text-shadow: black 0.5px 0.5px 0.5px;
-    }
+    // a:hover {
+    //     scale: none;
+    //     text-shadow: black 0.5px 0.5px 0.5px;
+    // }
 
     footer {
         height: 120px;
@@ -164,8 +166,6 @@
     main h1 {
         position: static;
     }
-
-    
 
     .DatosContainer {
         width: 400px;

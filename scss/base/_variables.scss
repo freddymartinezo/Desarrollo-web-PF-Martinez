@@ -28,10 +28,6 @@ $color-transparencia-0842: rgba(29, 139, 139, 0.842);
     display: $flex;
     justify-content: $justify;
     align-items: $aling;
-
-    // display: flex;
-    // justify-content: space-evenly;
-    // align-items: center;
 }
 
 @mixin videos ($flex,$justify,$aling,$wrap) {
