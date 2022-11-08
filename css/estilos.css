@@ -104,10 +104,12 @@ main {
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  grid-area: main; }
+  grid-area: main;
+  width: 100vw; }
   main h1 {
     padding: 10px;
     margin: 5px;
+    width: 100vw;
     color: #7D9D9C;
     text-align: center;
     background-color: lightgrey; }
@@ -322,8 +324,7 @@ footer {
 @media screen and (max-width: 450px) {
   .MenuDesplegable {
     display: inline;
-    z-index: 100;
-    height: -10%; }
+    z-index: 100; }
   .picture img {
-    width: 250px;
-    height: 250px; } }
+    width: 100%;
+    height: 100vh; } }

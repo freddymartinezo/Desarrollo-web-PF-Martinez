@@ -9,9 +9,11 @@ main {
     background-attachment: fixed;
     background-repeat: no-repeat;
     grid-area: main;
+    width: 100vw;
     h1 {
         padding: 10px;
         margin: 5px;
+        width: 100vw;
         color: $paleta-colores;
         text-align: center;
         background-color:  $gris-claro;
