@@ -51,7 +51,8 @@ a {
 
 .IrArriba {
   text-decoration: none;
-  margin-left: 40%; }
+  margin-left: 40%;
+  margin-bottom: 3rem; }
   .IrArriba:hover {
     text-shadow: black 2px 2px 2px; }
 
